@@ -3,13 +3,13 @@
 }
 html {
   scroll-behavior: smooth;
+  /* font-family: "Poppins"; */
 }
 
 body {
   margin: 0;
   padding: 0;
   background-color: rgb(246, 246, 246);
-  max-width: 1100px;
   overflow-x: hidden;
 }
 
@@ -20,6 +20,7 @@ body {
   align-items: center;
 }
 .header-wrapper {
+  font-family: "Noto Sans Georgian";
   background-color: #fff;
   border-bottom: 1px solid #eef1f1;
   padding-left: 47px;
@@ -56,6 +57,7 @@ body {
   column-gap: 20px;
 }
 .header-btns {
+  font-family: "Noto Sans Georgian";
   column-gap: 14px;
   align-items: center;
   display: flex;
@@ -64,11 +66,12 @@ body {
 
 .navigation button,
 .header-btns button {
+  font-family: "Noto Sans Georgian";
   cursor: pointer;
   display: flex;
   border: none;
   background: none;
-  font-size: 18px;
+  font-size: 16px;
   /* color: rgb(32, 32, 32); */
 }
 
@@ -81,11 +84,12 @@ body {
 }
 .subscribe-set {
   text-decoration: none;
-  font-size: 1em;
-  font-weight: 900;
+  font-size: 14px;
+  font-weight: 600;
   color: #182cc0;
 }
 #change-lang {
+  font-family: "Noto Sans Georgian";
   display: flex;
   align-items: center;
   gap: 5px;
@@ -108,7 +112,7 @@ body {
 
 .padding-main {
   width: 100vw;
-  padding-top: 60px;
+  padding-top: 10px;
 }
 ::-webkit-scrollbar {
   width: 10px;
@@ -127,6 +131,7 @@ main {
   padding: 20px 0px;
 }
 .main-wrapper {
+  font-family: "Noto Sans Georgian";
   /* padding: 0px 47px; */
   max-width: 1100px;
   margin-left: auto;
@@ -134,8 +139,8 @@ main {
 }
 #page-name {
   padding: 50px 0 40px 0;
-  font-size: 14px;
-  color: rgb(103, 103, 103);
+  font-size: 12px;
+  color: rgb(0, 0, 0);
 }
 
 .image-container {
@@ -161,6 +166,7 @@ main {
   margin-bottom: 30px;
 }
 .image-container button {
+  font-family: "Noto Sans Georgian";
   background-image: linear-gradient(15deg, #001682, #3240e5);
   background-color: #4778dc;
   text-align: center;
@@ -178,8 +184,8 @@ main {
 }
 .concept-text {
   margin-top: 30px;
-  padding: 60px 0;
-  font-size: 35px;
+  padding: 80px 0;
+  font-size: 30px;
 }
 
 /*  */
@@ -250,9 +256,9 @@ main {
   text-decoration: underline;
   font-size: 16px;
 }
-.media h5,
-.premium h5,
-.three-six-zero h5 {
+.media h3,
+.premium h3,
+.three-six-zero h3 {
   margin-bottom: 15px;
   font-size: 28px;
 }
@@ -296,4 +302,127 @@ main {
   color: black;
   font-size: 42px;
   font-weight: bold;
+}
+
+/*  */
+
+#fifth-section {
+  padding: 40px 0;
+}
+
+.digital-bank {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.digital-info-text {
+  max-width: 60%;
+}
+.digital-info-text p {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: rgb(124, 124, 124);
+}
+.digital-img {
+  background-image: url("https://static.tbcconcept.ge/desktop/media/3sdx4uin.3qibankkk3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 26%;
+  min-height: 370px;
+}
+
+.product-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 50px 0;
+}
+.product-container-block {
+  box-shadow: 1px 1px 19px 2px rgba(0, 0, 0, 0.11);
+  max-width: 350px;
+  border-radius: 5px;
+  border: 1px solid rgba(134, 134, 134, 0.495);
+}
+.product-container-block p {
+}
+.product-block-img-three-six-zero,
+.product-block-img-digital,
+.product-block-img-premium {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  width: 100%;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.product-block-img-digital {
+  background-image: url("https://static.tbcconcept.ge/desktop/media/mfvvitla.0j5430128849_7213815365374065_9017687812435872577_n.png");
+}
+.product-block-img-premium {
+  background-image: url("https://static.tbcconcept.ge/desktop/media/0m25n3qt.w03prem.png");
+}
+.product-block-img-three-six-zero {
+  background-image: url("https://static.tbcconcept.ge/desktop/media/nqeaa1rb.avl360.png");
+}
+.product-block-text {
+  padding: 15px;
+}
+
+.product-block-text h3 {
+  font-size: 16px;
+}
+.product-block-text p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  font-size: 14px;
+  color: rgb(136, 136, 136);
+}
+
+/*  */
+
+#seventh-section {
+  padding: 50px 0;
+}
+
+.seventh-section-container-img {
+  border-radius: 15px; /* Adjust this value for more rounded corners */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("https://static.tbcconcept.ge/desktop/media/nvmgsymp.3xqprivate%20banker.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 23rem;
+  color: white;
+  display: flex;
+  align-items: end;
+}
+
+.seventh-image-container-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 70px;
+}
+.seventh-image-container-text button {
+  max-width: 150px;
+  font-family: "Noto Sans Georgian";
+  background: linear-gradient(15deg, #001682, #3240e5);
+  background-color: #4778dc;
+  text-align: center;
+  font-weight: bold;
+  font-size: 13px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 15px 30px;
+  cursor: pointer;
+}
+.seventh-image-container-text button:hover {
+  background: rgb(77, 125, 196);
 }
