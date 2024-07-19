@@ -11,16 +11,7 @@ body {
 }
 
 /* header */
-#change-lang {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  font-weight: bolder;
-  color: rgb(95, 95, 95);
-}
-#change-lang img {
-  width: 15px;
-}
+
 .mainBtn-logo a {
   display: flex;
   align-items: center;
@@ -90,6 +81,21 @@ body {
   font-size: 1em;
   font-weight: 900;
   color: #182cc0;
+}
+#change-lang {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: bolder;
+  color: rgb(95, 95, 95);
+}
+#change-lang img {
+  width: 15px;
+}
+#change-lang:hover {
+  transition: 0.3s;
+  border-radius: 5px;
+  background-color: rgb(238, 238, 238);
 }
 .subscribe-set:hover {
   color: #4778dc;
