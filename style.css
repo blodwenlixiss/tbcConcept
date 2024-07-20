@@ -5,23 +5,21 @@ html {
   scroll-behavior: smooth;
   /* font-family: "Poppins"; */
 }
-
 body {
   margin: 0;
   padding: 0;
   background-color: rgb(246, 246, 246);
   overflow-x: hidden;
+  font-family: "Noto Sans Georgian";
 }
 
 /* header */
-
 .mainBtn-logo a {
   display: flex;
   align-items: center;
 }
 .header-wrapper {
   position: fixed;
-  font-family: "Noto Sans Georgian";
   background-color: #fff;
   border-bottom: 1px solid #eef1f1;
   padding-left: 47px;
@@ -34,47 +32,38 @@ body {
 }
 .header-navigation {
   max-width: 1100px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   display: flex;
   align-items: center;
-  padding: 21px 0px;
+  padding: 21px 0;
 }
-
 .navigation {
   display: flex;
   align-items: center;
-  margin-left: 55px;
-  margin-right: 30px;
+  margin: 0 30px 0 55px;
 }
 .navigation ul {
   padding: 0;
   margin: 0;
   list-style-type: none;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   column-gap: 20px;
 }
 .header-btns {
-  font-family: "Noto Sans Georgian";
+  position: relative;
   column-gap: 14px;
-  align-items: center;
   display: flex;
   margin-left: auto;
 }
-
 .navigation button,
 .header-btns button {
-  font-family: "Noto Sans Georgian";
   cursor: pointer;
   display: flex;
   border: none;
   background: none;
   font-size: 16px;
-  /* color: rgb(32, 32, 32); */
 }
-
 .header-btns img {
   max-width: 16px;
 }
@@ -82,19 +71,81 @@ body {
   display: flex;
   align-items: center;
 }
+#change-lang {
+  border: none;
+  display: flex;
+  align-items: center;
+  height: 30px;
+  gap: 5px;
+  font-weight: bolder;
+  color: rgb(95, 95, 95);
+  cursor: pointer;
+  background-color: white;
+}
+#change-lang img {
+  width: 15px;
+}
+#change-lang-footer {
+  border: none;
+  display: flex;
+  align-items: center;
+  height: 30px;
+  gap: 5px;
+  font-weight: bolder;
+  color: rgb(95, 95, 95);
+  cursor: pointer;
+  background-color: white;
+}
+#change-lang-footer img {
+  width: 15px;
+}
+
+#change-lang-footer:hover {
+  transition: 0.3s;
+  border-radius: 5px;
+  background-color: rgb(238, 238, 238);
+}
+
+#change-lang:hover {
+  transition: 0.3s;
+  border-radius: 5px;
+  background-color: rgb(238, 238, 238);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  border: 1px solid rgb(213, 213, 213);
+  border-radius: 5px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  top: 30px;
+  right: 0;
+}
+.dropdown-content a {
+  color: black;
+  padding: 10px 12px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+.header-btn-dropdown:hover .dropdown-content {
+  display: block;
+}
+
 .subscribe-set {
   text-decoration: none;
   font-size: 14px;
   font-weight: 600;
   color: #182cc0;
 }
-
 .subscribe-set:hover {
   color: #4778dc;
 }
 
 /* main */
-
 .padding-main {
   width: 100vw;
   padding-top: 10px;
@@ -102,7 +153,6 @@ body {
 ::-webkit-scrollbar {
   width: 10px;
 }
-
 ::-webkit-scrollbar-thumb {
   scroll-behavior: smooth;
   background: rgb(170, 170, 170);
@@ -111,23 +161,18 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(126, 126, 126);
 }
-
 main {
-  padding: 20px 0px;
+  padding: 20px 0;
 }
 .main-wrapper {
-  font-family: "Noto Sans Georgian";
-  /* padding: 0px 47px; */
   max-width: 1100px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 #page-name {
-  padding: 50px 0 40px 0;
+  padding: 50px 0 40px;
   font-size: 12px;
   color: rgb(0, 0, 0);
 }
-
 .image-container {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(https://static.tbcconcept.ge/desktop/media/ze324k50.yq4Become-2.webp);
@@ -150,8 +195,8 @@ main {
   font-weight: 400;
   margin-bottom: 30px;
 }
-.image-container button {
-  font-family: "Noto Sans Georgian";
+.image-container button,
+.seventh-image-container-text button {
   background-image: linear-gradient(15deg, #001682, #3240e5);
   background-color: #4778dc;
   text-align: center;
@@ -162,8 +207,10 @@ main {
   color: white;
   padding: 15px 30px;
   cursor: pointer;
+  max-width: 30%;
 }
-.image-container button:hover {
+.image-container button:hover,
+.seventh-image-container-text button:hover {
   background-image: none;
   transition: 1s;
 }
@@ -173,16 +220,16 @@ main {
   font-size: 30px;
 }
 
-/*  */
-
-#second-section {
+/* sections */
+#second-section,
+#third-section,
+#fifth-section,
+#seventh-section {
   padding: 50px 0;
 }
-
 .grid-template {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto;
   gap: 30px;
 }
 .grid-template a {
@@ -190,7 +237,6 @@ main {
   color: white;
   font-size: 28px;
 }
-
 .media,
 .premium,
 .three-six-zero {
@@ -202,34 +248,29 @@ main {
   background-repeat: no-repeat;
   background-position: center;
   padding: 30px 40px;
-  background-size: 100%;
 }
-
 .media {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("https://static.tbcconcept.ge/desktop/media/mfvvitla.0j5430128849_7213815365374065_9017687812435872577_n.png");
-  grid-column: 1/2;
-  grid-row: 1/2;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
   height: 250px;
 }
-
 .premium {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("https://static.tbcconcept.ge/desktop/media/0m25n3qt.w03prem.png");
-  grid-column: 1/2;
-  grid-row: 2/3;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
   height: 250px;
 }
-
 .three-six-zero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("https://static.tbcconcept.ge/desktop/media/nqeaa1rb.avl360.png");
-  grid-column: 2/3;
-  grid-row: 1/3;
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
   height: 100%;
   background-size: 170%;
 }
-
 .media span,
 .premium span,
 .three-six-zero span {
@@ -242,24 +283,18 @@ main {
   margin-bottom: 15px;
   font-size: 28px;
 }
-
 .media:hover,
-.premium:hover {
-  transition: background-size 0.3s ease-in-out;
-  background-size: 105%;
-}
-
+.premium:hover,
 .three-six-zero:hover {
   transition: background-size 0.3s ease-in-out;
+}
+.media:hover,
+.premium:hover {
+  background-size: 105%;
+}
+.three-six-zero:hover {
   background-size: 175%;
 }
-
-/*  */
-
-#third-section {
-  padding: 50px 0;
-}
-
 .statistics {
   display: flex;
   justify-content: space-between;
@@ -275,7 +310,6 @@ main {
   text-align: left;
   color: rgb(72, 72, 72);
 }
-
 .customer span,
 .event span,
 .offer span {
@@ -283,25 +317,27 @@ main {
   font-size: 42px;
   font-weight: bold;
 }
-
-/*  */
-
-#fifth-section {
-  padding: 40px 0;
-}
-
 .digital-bank {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .digital-info-text {
   max-width: 60%;
 }
+.digital-info-text button {
+  background-color: white;
+  border: 1px solid rgb(210, 210, 210);
+  padding: 15px 30px;
+  cursor: pointer;
+}
+.digital-info-text button:hover {
+  background-color: rgb(245, 245, 245);
+}
 .digital-info-text p {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  display: flex;
+  gap: 20px;
+  margin: 30px 0;
   color: rgb(124, 124, 124);
 }
 .digital-img {
@@ -311,7 +347,6 @@ main {
   width: 26%;
   min-height: 370px;
 }
-
 .product-container {
   display: flex;
   justify-content: space-between;
@@ -323,8 +358,6 @@ main {
   max-width: 350px;
   border-radius: 5px;
   border: 1px solid rgba(134, 134, 134, 0.495);
-}
-.product-container-block p {
 }
 .product-block-img-three-six-zero,
 .product-block-img-digital,
@@ -348,7 +381,6 @@ main {
 .product-block-text {
   padding: 15px;
 }
-
 .product-block-text h3 {
   font-size: 16px;
 }
@@ -362,15 +394,8 @@ main {
   font-size: 14px;
   color: rgb(136, 136, 136);
 }
-
-/*  */
-
-#seventh-section {
-  padding: 50px 0;
-}
-
 .seventh-section-container-img {
-  border-radius: 15px; /* Adjust this value for more rounded corners */
+  border-radius: 15px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("https://static.tbcconcept.ge/desktop/media/nvmgsymp.3xqprivate%20banker.png");
   background-repeat: no-repeat;
@@ -382,69 +407,27 @@ main {
   display: flex;
   align-items: end;
 }
-
 .seventh-image-container-text {
   display: flex;
   flex-direction: column;
   gap: 10px;
   padding: 70px;
 }
-.seventh-image-container-text button {
-  max-width: 150px;
-  font-family: "Noto Sans Georgian";
-  background: linear-gradient(15deg, #001682, #3240e5);
-  background-color: #4778dc;
-  text-align: center;
-  font-weight: bold;
-  font-size: 13px;
-  border: none;
-  border-radius: 5px;
-  color: white;
-  padding: 15px 30px;
-  cursor: pointer;
-}
-.seventh-image-container-text button:hover {
-  background: rgb(77, 125, 196);
-}
 
-/*  */
-
+/* footer */
 .footer-size-adjust {
   max-width: 1100px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 .footer-container {
   background-color: white;
-  padding: 40px 0 0 0;
+  padding: 40px 0 0;
 }
-
 .footer-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 0 40px 0;
-}
-
-#change-lang {
-  border: none;
-  font-family: "Noto Sans Georgian";
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  font-weight: bolder;
-  color: rgb(95, 95, 95);
-  cursor: pointer;
-
-  background-color: white;
-}
-#change-lang img {
-  width: 15px;
-}
-#change-lang:hover {
-  transition: 0.3s;
-  border-radius: 5px;
-  background-color: rgb(238, 238, 238);
+  padding: 0 0 40px;
 }
 
 .footer-navigations {
@@ -468,7 +451,6 @@ main {
   padding: 0;
   margin-top: 20px;
 }
-
 .contact a,
 .contact p {
   margin: 0;
@@ -487,7 +469,10 @@ main {
   height: 15px;
 }
 .color-list-style a:hover {
-  color: rgb(145, 145, 145);
+  color: rgb(88, 113, 226);
+}
+.color-list-style p:hover {
+  color: rgb(181, 181, 181);
   text-decoration: underline;
 }
 .social {
@@ -511,15 +496,13 @@ main {
   transition: 0.3s ease-in-out;
   background-color: rgb(220, 220, 220);
 }
-
 .footer-policy {
   border-top: 1px solid rgb(206, 206, 206);
   padding: 20px;
 }
 .footer-policy-container {
   max-width: 1100px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -535,4 +518,10 @@ main {
 }
 .footer-policy-container a:hover {
   color: rgb(178, 178, 178);
+}
+.btn-dropdown-footer {
+  position: relative;
+}
+.btn-dropdown-footer:hover .dropdown-content {
+  display: block;
 }
