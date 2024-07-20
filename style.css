@@ -20,12 +20,12 @@ body {
   align-items: center;
 }
 .header-wrapper {
+  position: fixed;
   font-family: "Noto Sans Georgian";
   background-color: #fff;
   border-bottom: 1px solid #eef1f1;
   padding-left: 47px;
   padding-right: 47px;
-  position: fixed;
   left: 0;
   right: 0;
 }
@@ -88,22 +88,7 @@ body {
   font-weight: 600;
   color: #182cc0;
 }
-#change-lang {
-  font-family: "Noto Sans Georgian";
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  font-weight: bolder;
-  color: rgb(95, 95, 95);
-}
-#change-lang img {
-  width: 15px;
-}
-#change-lang:hover {
-  transition: 0.3s;
-  border-radius: 5px;
-  background-color: rgb(238, 238, 238);
-}
+
 .subscribe-set:hover {
   color: #4778dc;
 }
@@ -199,11 +184,6 @@ main {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
   gap: 30px;
-  a {
-    text-decoration: none;
-    color: white;
-    font-size: 28px;
-  }
 }
 .grid-template a {
   text-decoration: none;
@@ -425,4 +405,134 @@ main {
 }
 .seventh-image-container-text button:hover {
   background: rgb(77, 125, 196);
+}
+
+/*  */
+
+.footer-size-adjust {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer-container {
+  background-color: white;
+  padding: 40px 0 0 0;
+}
+
+.footer-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0 40px 0;
+}
+
+#change-lang {
+  border: none;
+  font-family: "Noto Sans Georgian";
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: bolder;
+  color: rgb(95, 95, 95);
+  cursor: pointer;
+
+  background-color: white;
+}
+#change-lang img {
+  width: 15px;
+}
+#change-lang:hover {
+  transition: 0.3s;
+  border-radius: 5px;
+  background-color: rgb(238, 238, 238);
+}
+
+.footer-navigations {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 20px;
+  gap: 130px;
+}
+.footer-navigations a {
+  text-decoration: none;
+  color: black;
+}
+.footer-navigations ul,
+.footer-navigations li,
+.footer-container p {
+  font-size: 18px;
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.contact a,
+.contact p {
+  margin: 0;
+  display: flex;
+  font-size: 16px;
+}
+.color-list-style a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+  color: grey;
+}
+.color-list-style img {
+  width: 15px;
+  height: 15px;
+}
+.color-list-style a:hover {
+  color: rgb(145, 145, 145);
+  text-decoration: underline;
+}
+.social {
+  margin-top: 30px;
+}
+.social a {
+  border-radius: 5px;
+  padding: 5px;
+}
+.social img {
+  width: 16px;
+  height: 16px;
+}
+.social p {
+  display: flex;
+  align-items: center;
+  padding: 30px 0;
+  gap: 20px;
+}
+.social a:hover {
+  transition: 0.3s ease-in-out;
+  background-color: rgb(220, 220, 220);
+}
+
+.footer-policy {
+  border-top: 1px solid rgb(206, 206, 206);
+  padding: 20px;
+}
+.footer-policy-container {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-policy-container p,
+.footer-policy-container a {
+  display: flex;
+  gap: 15px;
+  font-size: 14px;
+  text-decoration: none;
+  color: grey;
+  margin: 0;
+}
+.footer-policy-container a:hover {
+  color: rgb(178, 178, 178);
 }
