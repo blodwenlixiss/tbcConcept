@@ -26,6 +26,7 @@ body {
   padding-right: 47px;
   left: 0;
   right: 0;
+  z-index: 1000;
 }
 .img-color:hover {
   filter: brightness(0.25);
@@ -317,6 +318,132 @@ main {
   font-size: 42px;
   font-weight: bold;
 }
+
+/*  */
+
+#fourth-section {
+  padding: 10px 0;
+  overflow-x: hidden;
+}
+
+.offer-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.slider-container-wrapper {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.slider-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  gap: 30px;
+  padding-bottom: 40px;
+}
+
+.slider-block {
+  flex: 0 0 20%;
+  box-sizing: border-box;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 0 0 40px 0;
+  border: 1px solid rgba(198, 198, 198, 0.495);
+}
+
+.slider-block-img-jazz,
+.slider-block-img-auto,
+.slider-block-img-auto-jazz,
+.slider-block-img-meridien,
+.slider-block-img-colosseum,
+.slider-block-img-pulse {
+  position: relative;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  width: 100%;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider-img-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: white;
+  width: 100px;
+  height: 60px;
+  right: 0;
+  top: 30px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.slider-img-logo img {
+  width: 80px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.slider-block-text {
+  text-align: left;
+  padding: 20px 30px;
+}
+
+.slider-block-text h3 {
+  font-size: 16px;
+  color: black;
+  width: 285px;
+}
+
+.slider-block-text p {
+  display: flex;
+  gap: 10px;
+  font-size: 12px;
+  color: rgb(136, 136, 136);
+}
+
+.slider-block-img-auto {
+  background-image: url("https://static.tbcconcept.ge/desktop/media/onflg4xp.isqDSC_2268%202.png");
+}
+
+.slider-block-img-jazz {
+  background-image: url("https://static.tbcconcept.ge/desktop/media/nng1tsvv.1bs350.jpg");
+}
+
+.slider-block-img-auto-jazz {
+  background-image: url("https://static.tbcconcept.ge/desktop/media/exhqxj55.burtegeta-02.png");
+}
+.slider-block-img-meridien {
+  background-image: url("https://static.tbcconcept.ge/desktop/media/fukakrz1.jvfle%20meridien%202.png");
+}
+.slider-block-img-colosseum {
+  background-image: url("https://static.tbcconcept.ge/desktop/media/izjj4s1w.f13colloseum%202.png");
+}
+.slider-block-img-pulse {
+  background-image: url("https://static.tbcconcept.ge/desktop/media/nutm2xia.1hopulse-02.png");
+}
+
+.slider-btns {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+
+.slider-btns button {
+  border: none;
+  background: none;
+  font-size: 28px;
+  font-weight: bolder;
+  color: #182cc0;
+  cursor: pointer;
+}
+
+/*  */
+
 .digital-bank {
   display: flex;
   justify-content: space-between;
@@ -353,11 +480,12 @@ main {
   gap: 15px;
   padding: 50px 0;
 }
+
 .product-container-block {
   box-shadow: 1px 1px 19px 2px rgba(0, 0, 0, 0.11);
   max-width: 350px;
   border-radius: 5px;
-  border: 1px solid rgba(134, 134, 134, 0.495);
+  border: 1px solid rgba(198, 198, 198, 0.495);
 }
 .product-block-img-three-six-zero,
 .product-block-img-digital,
@@ -413,7 +541,33 @@ main {
   gap: 10px;
   padding: 70px;
 }
+/*  */
 
+#last-section {
+  overflow-x: hidden;
+}
+.bottom-slider-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  gap: 30px;
+  padding-bottom: 40px;
+}
+.reward-slider {
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid rgb(235, 235, 235);
+  min-width: 340px;
+  color: grey;
+}
+.reward-slider h3 {
+  font-size: 17px;
+  color: black;
+}
+.reward-slider img {
+  max-width: 100px;
+  height: 50px;
+}
 /* footer */
 .footer-size-adjust {
   max-width: 1100px;
