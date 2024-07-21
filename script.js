@@ -15,8 +15,9 @@ let sliderBlockSize = sliderBlocks[0].offsetWidth;
 let bottomSliderBlockSize = rewardSlider[0].offsetWidth;
 
 function handleSlider(container, size) {
-  container.style.transform = `translateX(-${currentIndex * (size + 29)}px)`;
+  container.style.transform = `translateX(-${currentIndex * (size + 19)}px)`;
 }
+console.log(sliderBlockSize);
 
 nextBtn.addEventListener("click", () => {
   if (currentIndex < sliderBlocks.length - 3) {
@@ -44,3 +45,13 @@ bottomPrevBtn.addEventListener("click", () => {
     handleSlider(bottomSliderContainer, bottomSliderBlockSize);
   }
 });
+
+function myFunction(classList, arrowClass) {
+  const dropDownButton = document.getElementById(classList);
+  dropDownButton.classList.toggle("show");
+  if (dropDownButton.classList.contains("show")) {
+    document.getElementById(arrowClass).style.rotate = "-90deg";
+  } else {
+    document.getElementById(arrowClass).style.rotate = "+90deg";
+  }
+}
