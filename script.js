@@ -16,14 +16,14 @@ const sliderBlockSize = sliderBlock[0].offsetWidth;
 
 bottomNextBtn.addEventListener("click", () => {
   bottomSliderContainer.scrollBy({
-    left: bottomSliderBlockSize + 15,
+    left: bottomSliderBlockSize + 30,
     behavior: "smooth",
   });
 });
 
 bottomPrevBtn.addEventListener("click", () => {
   bottomSliderContainer.scrollBy({
-    left: -bottomSliderBlockSize - 15,
+    left: -bottomSliderBlockSize - 30,
     behavior: "smooth",
   });
 });
