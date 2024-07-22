@@ -8,6 +8,7 @@ Welcome to the TBC Concept webpage! This project showcases a responsive site for
 2. [File Structure](#file-structure)
 3. [Technology Stack](#technology-stack)
 4. [Usage Instructions](#usage-instructions)
+5. [Setup Instruction](#setup-instructions)
 
 ## Features
 
@@ -46,3 +47,17 @@ Welcome to the TBC Concept webpage! This project showcases a responsive site for
 - **Interactive Elements:**
   - Utilize the dropdown menu in the header for more options.
   - Interact with sliders to view promotional offers and awards.
+
+## Setup Instructions
+
+1. **Clone the repository:**
+   ```bash
+   git clone <https://github.com/blodwenlixiss/tbcConcept.git>
+   ```
+2. **Navigate to the project directory:**
+   ```bash
+   cd TBC-Concept-Webpage
+   ```
+3. **Open the project in your preferred code editor.**
+
+4. **Open `index.html` in a web browser to view the site.**
