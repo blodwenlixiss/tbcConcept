@@ -764,6 +764,10 @@ main {
 .hidden {
   display: none;
 }
+.color-list-style-header a {
+  color: grey;
+  text-decoration: none;
+}
 
 .navigation-responsive ul {
   list-style-type: none;
