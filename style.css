@@ -1,16 +1,28 @@
+@font-face {
+  font-family: "TBCX";
+  src: url("./assets/fonts/TBCXBold.6db5e61d.woff2");
+}
+@font-face {
+  font-family: "TBCX";
+  src: url("./assets/fonts/TBCXRegular.dee156cc.woff2");
+}
+@font-face {
+  font-family: "TBCX";
+  src: url("./assets/fonts/TBCXMedium.8ef1248a.woff2");
+}
+
 * {
   box-sizing: border-box;
 }
 html {
   scroll-behavior: smooth;
-  /* font-family: "Poppins"; */
 }
 body {
   margin: 0;
   padding: 0;
   background-color: rgb(246, 246, 246);
   overflow-x: hidden;
-  font-family: "Noto Sans Georgian";
+  font-family: "TBCX", sans-serif;
 }
 .default-page {
   padding-top: 90px;
@@ -199,7 +211,7 @@ main {
   max-width: 700px;
   height: 100%;
 }
-.image-container-text h1 {
+.image-container-text button .image-container-text h1 {
   font-size: 32px;
 }
 .image-container h2 {
@@ -209,6 +221,7 @@ main {
 }
 .image-container button,
 .seventh-image-container-text a {
+  font-family: "TBCX";
   text-decoration: none;
   background-image: linear-gradient(15deg, #001682, #3240e5);
   background-color: #4778dc;
@@ -224,8 +237,8 @@ main {
 }
 .image-container button:hover,
 .seventh-image-container-text a:hover {
+  transition: 1s ease-out;
   background-image: none;
-  transition: 1s;
 }
 .concept-text {
   margin-top: 30px;
@@ -268,6 +281,7 @@ main {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
   height: 250px;
+  background-size: 100%;
 }
 .premium {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
@@ -275,6 +289,7 @@ main {
   grid-column: 1 / 2;
   grid-row: 2 / 3;
   height: 250px;
+  background-size: 100%;
 }
 .three-six-zero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
@@ -297,16 +312,16 @@ main {
   font-size: 28px;
 }
 .media:hover,
-.premium:hover,
-.three-six-zero:hover {
-  transition: background-size 0.3s ease-in-out;
-}
-.media:hover,
 .premium:hover {
   background-size: 105%;
 }
 .three-six-zero:hover {
   background-size: 175%;
+}
+.media:hover,
+.premium:hover,
+.three-six-zero:hover {
+  transition: background-size 0.5s ease-in-out;
 }
 .statistics {
   display: flex;
@@ -631,7 +646,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: start;
-  font-family: "Poppins";
+  font-family: "TBCX", sans-serif;
   font-weight: 600;
   font-size: 20px;
 }
