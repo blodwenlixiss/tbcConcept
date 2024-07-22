@@ -220,7 +220,7 @@ main {
   color: white;
   padding: 15px 30px;
   cursor: pointer;
-  max-width: 30%;
+  max-width: 35%;
 }
 .image-container button:hover,
 .seventh-image-container-text a:hover {
